@@ -18,6 +18,8 @@ requirements:
     - pip
 
   build:
+    - python
+    - pip
     - setuptools
     - cmake
     - gxx_linux-64
