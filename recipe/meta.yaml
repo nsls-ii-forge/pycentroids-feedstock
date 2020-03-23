@@ -13,30 +13,28 @@ build:
   script: python setup.py install
 
 requirements:
+  host:
+    - python
+    - pip
+
   build:
     - setuptools
+    - cmake
+    - gxx_linux-64
+    - cpplint
+    - pybind11
+
+  run:
     - python
     - numpy
     - scipy
-    - pytest
-    - pytest-runner
-    - cmake
     - pandas
     - lmfit-c
-    - pybind11
-    - gxx_linux-64
-    - cpplint
-
-  run:
-    - lmfit-c
-    - pandas
-    - python
-    - {{ pin_compatible('numpy') }}
-    - scipy
 
 test:
   requires:
     - pytest
+    - pytest-runner
   imports:
     - pycentroids
   commands:
