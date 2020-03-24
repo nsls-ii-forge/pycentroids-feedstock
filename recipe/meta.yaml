@@ -23,7 +23,9 @@ requirements:
     - setuptools
     - cmake
     - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
     - cpplint
+    - lmfit-c
     - pybind11
     - pytest
     - pytest-runner
