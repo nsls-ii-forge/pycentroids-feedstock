@@ -16,7 +16,6 @@ requirements:
   host:
     - python
     - pip
-    - setuptools
   build:
     - cmake
     - {{ compiler('c') }}
@@ -24,6 +23,7 @@ requirements:
     - cpplint
     - lmfit-c
     - pybind11
+    - setuptools
   run:
     - python
     - lmfit-c
