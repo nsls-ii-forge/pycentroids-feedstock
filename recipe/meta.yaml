@@ -23,6 +23,8 @@ requirements:
     - cpplint
     - lmfit-c
     - pybind11
+    - pytest
+    - pytest-runner
   run:
     - python
     - lmfit-c
