@@ -22,9 +22,11 @@ requirements:
     - pip
     - setuptools
     - cmake
-    - gxx_linux-64
+    - {{ compiler('c') }}
     - cpplint
     - pybind11
+    - pytest
+    - pytest-runner
 
   run:
     - python
