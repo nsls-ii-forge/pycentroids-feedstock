@@ -28,7 +28,7 @@ requirements:
 
   run:
     - python
-    - numpy
+    - {{ pin_compatible('numpy')  }}
     - scipy
     - pandas
     - lmfit-c
@@ -36,7 +36,6 @@ requirements:
 test:
   requires:
     - pytest
-    - pytest-runner
   imports:
     - pycentroids
   commands:
