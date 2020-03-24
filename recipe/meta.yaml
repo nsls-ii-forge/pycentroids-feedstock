@@ -16,7 +16,6 @@ requirements:
   host:
     - python
   build:
-    - pip
     - setuptools
     - cmake
     - {{ compiler('c') }}
