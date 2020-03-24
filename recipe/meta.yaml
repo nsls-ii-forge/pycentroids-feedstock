@@ -26,6 +26,8 @@ requirements:
     - pytest
     - pytest-runner
     - pandas
+    - numpy
+    - scipy
   run:
     - python
     - lmfit-c
