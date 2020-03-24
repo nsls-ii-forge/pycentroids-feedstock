@@ -16,26 +16,20 @@ requirements:
   host:
     - python
     - pip
-
-  build:
-    - python
-    - pip
     - setuptools
+  build:
     - cmake
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cpplint
     - lmfit-c
     - pybind11
-    - pytest
-    - pytest-runner
-
   run:
     - python
-    - {{ pin_compatible('numpy')  }}
-    - scipy
-    - pandas
     - lmfit-c
+    - pandas
+    - scipy
+    - {{ pin_compatible('numpy')  }}
 
 test:
   requires:
@@ -50,6 +44,3 @@ about:
   license: BSD 3-clause
   license_file: LICENSE
 
-extra:
-  recipe-maintainers:
-    - stuwilkins
