@@ -16,24 +16,19 @@ requirements:
   host:
     - python
     - pip
-
-  build:
-    - python
-    - pip
     - setuptools
+  build:
     - cmake
-    - {{ compiler('c') }}
     - cpplint
     - pybind11
-    - pytest
-    - pytest-runner
-
+    - {{ compiler('c') }}
+    - {{ compiler('cxx') }}
   run:
     - python
-    - {{ pin_compatible('numpy')  }}
-    - scipy
-    - pandas
     - lmfit-c
+    - pandas
+    - scipy
+    - {{ pin_compatible('numpy')  }}
 
 test:
   requires:
