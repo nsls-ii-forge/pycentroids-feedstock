@@ -25,6 +25,7 @@ requirements:
     - pybind11
     - pytest
     - pytest-runner
+    - pandas
   run:
     - python
     - lmfit-c
