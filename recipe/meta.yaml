@@ -24,7 +24,6 @@ requirements:
     - cpplint
     - lmfit-c
     - pybind11
-    - setuptools
   run:
     - python
     - lmfit-c
