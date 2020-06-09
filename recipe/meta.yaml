@@ -1,6 +1,6 @@
 {% set name = "pycentroids" %}
-{% set version = "0.1.8" %}
-{% set sha256 = "345868be12c735681d22f3d2934af6c52c49f1cd27e2465b3e46df29daac8477" %}
+{% set version = "0.1.9" %}
+{% set sha256 = "cfc37c7ce62e2ea231c93af1a8a227c5b2fc18b5a7e95cfc4be07857fd904502" %}
 
 package:
   name: {{ name|lower }}
@@ -22,13 +22,11 @@ requirements:
   build:
     - cmake
     - cpplint
-    - lmfit-c
     - pybind11
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   run:
     - python
-    - lmfit-c
     - pandas
     - scipy
     - {{ pin_compatible('numpy')  }}
