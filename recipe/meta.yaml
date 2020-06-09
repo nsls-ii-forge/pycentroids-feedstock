@@ -15,11 +15,9 @@ build:
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
-  host:
-    - python
-    - pip
   build:
     - python
+    - pip
     - cmake
     - cpplint
     - pybind11
