@@ -18,8 +18,8 @@ requirements:
   host:
     - python
     - pip
-    - pytest-runner
   build:
+    - python
     - cmake
     - cpplint
     - pybind11
