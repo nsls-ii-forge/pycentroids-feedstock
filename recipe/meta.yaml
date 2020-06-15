@@ -1,6 +1,6 @@
 {% set name = "pycentroids" %}
-{% set version = "0.1.9" %}
-{% set sha256 = "cfc37c7ce62e2ea231c93af1a8a227c5b2fc18b5a7e95cfc4be07857fd904502" %}
+{% set version = "0.1.11" %}
+{% set sha256 = "327c818b88df6d2b5c75c6efe2d4267f0eecaa1e434770e79ec2806fc05a44c1" %}
 
 package:
   name: {{ name|lower }}
