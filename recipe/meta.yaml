@@ -1,6 +1,6 @@
 {% set name = "pycentroids" %}
-{% set version = "0.1.11" %}
-{% set sha256 = "71b85cdf047f973368ae3525deb800fbb7c349153e3ff56a55b4e55b96194926" %}
+{% set version = "0.1.12" %}
+{% set sha256 = "a6009f50b442bb047e266195e1cfa7c84a0d01760781669f71d449a4bdbc595c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [win]
 
