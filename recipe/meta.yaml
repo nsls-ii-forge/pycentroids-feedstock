@@ -1,13 +1,13 @@
 {% set name = "pycentroids" %}
-{% set version = "0.1.11" %}
-{% set sha256 = "327c818b88df6d2b5c75c6efe2d4267f0eecaa1e434770e79ec2806fc05a44c1" %}
+{% set version = "0.1.13a5" %}
+{% set sha256 = "59b8c091377622444bfdf1a388560ab0b93e61eb8fb024f248edc72376d2f536" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/NSLS-II/centroids/archive/v{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
