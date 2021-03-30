@@ -45,4 +45,4 @@ test:
 about:
   home: https://github.com/NSLS-II/centroids
   license: BSD 3-clause
-  license_file: LICENSE
+  license_file: LICENSE/LICENSE
