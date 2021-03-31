@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [win]
 
@@ -25,6 +25,7 @@ requirements:
     - pip
     - cmake
     - cpplint
+    - numpy
     - pybind11
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
