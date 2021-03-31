@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . --no-deps -vv"
   skip: true  # [win]
 
@@ -21,8 +21,6 @@ requirements:
     - pip
     - pytest-runner
   build:
-    - python
-    - pip
     - cmake
     - cpplint
     - pybind11
@@ -30,13 +28,13 @@ requirements:
     - {{ compiler('cxx') }}
   run:
     - python
+    - numpy
     - pandas
-    - scipy
-    - {{ pin_compatible('numpy')  }}
 
 test:
   requires:
     - pytest
+    - scipy
   imports:
     - pycentroids
   commands:
