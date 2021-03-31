@@ -21,23 +21,20 @@ requirements:
     - pip
     - pytest-runner
   build:
-    - python
-    - pip
     - cmake
     - cpplint
-    - numpy
     - pybind11
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
   run:
     - python
+    - numpy
     - pandas
-    - scipy
-    - {{ pin_compatible('numpy')  }}
 
 test:
   requires:
     - pytest
+    - scipy
   imports:
     - pycentroids
   commands:
